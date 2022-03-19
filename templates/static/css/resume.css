@@ -18,10 +18,14 @@ li:last-child {
   padding-right: 0;
 }
 
+#insert {
+  display: none;
+}
+
 .container {
-  max-width: 1000px;
-  margin: 0 25px;
-  border: 1px solid red;
+  min-width: 800px;
+  /* padding: 25px auto; */
+  /* margin: 0 50px; */
 }
 
 .nav {
@@ -53,10 +57,40 @@ li:last-child {
 }
 
 .main_info {
-  border: 1px solid red;
   border-radius: 10px;
   margin: 100px;
   padding: 20px;
   height: 500px;
   box-shadow: 0 0 15px rgb(0 0 0 / 10%);
+}
+
+.main_p {
+  width: 800px;
+  word-break: break-all;
+}
+
+.text-typewriter{
+  position: relative;
+  top: 50%;  
+  width: 24em;
+  margin: 0 auto;
+  border-right: 2px solid rgba(255,255,255,.75);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);    
+}
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+            blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
 }
