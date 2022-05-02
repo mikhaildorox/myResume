@@ -1,3 +1,12 @@
+@font-face {
+  font-family: start-2p;
+  src: url(/templates/static/fonts/PressStart2P-vaV7.ttf);
+  /* font-family: super-legend-boy;
+  src: url(/templates/static/fonts/super-legend-boy.woff);
+  src: url(/templates/static/fonts/super-legend-boy.eot);
+  src: url(/templates/static/fonts/super-legend-boy.ttf); */
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -24,8 +33,9 @@ li:last-child {
 
 .container {
   min-width: 800px;
+  max-width: 100%;
   /* padding: 25px auto; */
-  /* margin: 0 50px; */
+  margin: 0 50px;
 }
 
 .nav {
@@ -52,7 +62,12 @@ li:last-child {
   transition: .2s;
 }
 
+.for_game {
+  font-family: start-2p;
+}
+
 .main_block {
+  margin: 25px auto;
   height: 800px;
 }
 
@@ -64,33 +79,46 @@ li:last-child {
   box-shadow: 0 0 15px rgb(0 0 0 / 10%);
 }
 
-.main_p {
-  width: 800px;
-  word-break: break-all;
-}
-
-.text-typewriter{
+/* .text-typewriter {
   position: relative;
-  top: 50%;  
+  top: 50%;
   width: 24em;
   margin: 0 auto;
-  border-right: 2px solid rgba(255,255,255,.75);
+  border-right: 2px solid rgba(255, 255, 255, .75);
   font-size: 180%;
   text-align: center;
   white-space: nowrap;
   overflow: hidden;
-  transform: translateY(-50%);    
+  transform: translateY(-50%);
+} */
+
+.main_p {
+  max-width: 100%;
+  padding: 10px;
 }
+
 /* Animation */
-.anim-typewriter{
+/* .anim-typewriter {
   animation: typewriter 4s steps(44) 1s 1 normal both,
-            blinkTextCursor 500ms steps(44) infinite normal;
+    blinkTextCursor 500ms steps(44) infinite normal;
+} */
+
+/* @keyframes typewriter {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 24em;
+  }
 }
-@keyframes typewriter{
-  from{width: 0;}
-  to{width: 24em;}
-}
-@keyframes blinkTextCursor{
-  from{border-right-color: rgba(255,255,255,.75);}
-  to{border-right-color: transparent;}
-}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, .75);
+  }
+
+  to {
+    border-right-color: transparent;
+  }
+} */
