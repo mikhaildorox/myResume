@@ -67,19 +67,27 @@ li:last-child {
 }
 
 .main_block {
+  border: 1px solid red;
   margin: 25px auto;
   height: 800px;
 }
 
 .main_info {
   border-radius: 10px;
+  justify-content: center;
   margin: 100px;
   padding: 20px;
   height: 500px;
   box-shadow: 0 0 15px rgb(0 0 0 / 10%);
+  border: 1px solid green;
 }
 
-/* .text-typewriter {
+.hidden {
+  position: absolute;
+  /* visibility: hidden; */
+}
+
+.text-typewriter {
   position: relative;
   top: 50%;
   width: 24em;
@@ -90,20 +98,21 @@ li:last-child {
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-50%);
-} */
+}
 
 .main_p {
+  height: 100%;
   max-width: 100%;
   padding: 10px;
 }
 
 /* Animation */
-/* .anim-typewriter {
+.anim-typewriter {
   animation: typewriter 4s steps(44) 1s 1 normal both,
     blinkTextCursor 500ms steps(44) infinite normal;
-} */
+} 
 
-/* @keyframes typewriter {
+@keyframes typewriter {
   from {
     width: 0;
   }
@@ -121,4 +130,4 @@ li:last-child {
   to {
     border-right-color: transparent;
   }
-} */
+} 

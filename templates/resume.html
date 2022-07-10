@@ -5,7 +5,7 @@
     <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UAen-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/resume.css') }}">
+    <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/resume.css') }}"> -->
     <link rel="stylesheet" href="static/css/resume.css">
     <!-- <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" /> -->
@@ -24,22 +24,28 @@
   <div class="container">
     <header class="header">
       <ul class="nav">
-        <li><a href="about" rel="insert" class="nav-link">About</a></li>
-        <li><a href="skills" rel="insert" class="nav-link">Skills</a></li>
-        <li><a href="education" rel="insert" class="nav-link">Education</a></li>
-        <li id="link-game"><a href="game" rel="insert" class="nav-link">Game</a></li>
+        <li id="about"><a href="#" rel="insert" class="nav-link">About</a></li>
+        <li id="skills"><a href="#" rel="insert" class="nav-link">Skills</a></li>
+        <li id="education"><a href="#" rel="insert" class="nav-link">Education</a></li>
+        <li id="game"><a href="#" rel="insert" class="nav-link">Game</a></li>
       </ul>
     </header>
   </div>
   <div class="container">
     <div class="main_block">
       <div class="main_info" >
-        <p class="main_p text-typewriter anim-typewriter" id="insert"></p>
+        <div class="main_p text-typewriter anim-typewriter">
+          <p class="about hidden">Few words about me Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia recusandae atque totam, est autem dolorum. Explicabo quidem fuga voluptates fugiat. Esse quis magni aperiam vitae quasi odit facilis tempora exercitationem!
+          Iure doloremque beatae iste alias, aliquid laborum rerum, unde repellat natus, odio voluptatibus. Sed ut laudantium neque obcaecati, provident delectus, eius perferendis, tenetur aliquid exercitationem nulla facilis alias. At, dolorem?</p>
+          <p class="skills hidden">Python, html, css, git, JS, </p>
+          <p class="education hidden">Bachelar DC</p>  
+          <p class="game hidden">quos cum.</p> 
+        </div>
       </div>
     </div>
   </div>
 </body>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-<script src="static/js/resume.js"></script>
+<!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script> -->
+<!-- <script src="static/js/resume.js"></script> -->
   <!-- {% endblock %} -->
 </html>>
