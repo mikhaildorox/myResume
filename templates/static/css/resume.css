@@ -13,6 +13,13 @@
   box-sizing: border-box;
 }
 
+img {
+  width: 200px;
+  margin: 5px auto;
+  display: block;
+  border-radius: 50%;
+}
+
 a {
   cursor: pointer;
   text-decoration: none;
@@ -27,13 +34,18 @@ li:last-child {
   padding-right: 0;
 }
 
+#welcome-section {
+  width: 100%;
+  margin-top:65px;
+  border: 1px solid red;
+}
+
 #insert {
   display: none;
 }
 
 .container {
-  min-width: 800px;
-  max-width: 100%;
+  width: 100%;
   /* padding: 25px auto; */
   margin: 0 50px;
 }
@@ -42,6 +54,12 @@ li:last-child {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top:20px;
+  
 }
 
 .nav-link {
@@ -131,3 +149,17 @@ li:last-child {
     border-right-color: transparent;
   }
 } 
+
+
+@media (max-width: 768px) {
+
+#welcome-section {
+  border: solid 2px green;
+}
+#navbar {
+  width: 100%;
+}
+.container {
+  margin: 0;
+}
+}
