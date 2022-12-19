@@ -38,7 +38,7 @@ li:last-child {
   margin: 0 50px;
 }
 
-.nav {
+#navbar {
   display: flex;
   flex-direction: row;
   justify-content: center;
