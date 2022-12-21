@@ -38,6 +38,7 @@ li:last-child {
   width: 100%;
   margin-top: 65px;
   border: 1px solid red;
+  text-align: center;
 }
 
 #insert {
