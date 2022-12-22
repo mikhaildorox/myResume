@@ -6,7 +6,9 @@
   src: url(/templates/static/fonts/super-legend-boy.eot);
   src: url(/templates/static/fonts/super-legend-boy.ttf); */
 }
-
+html {
+  background: rgb(0,3,36);
+  background: linear-gradient(0deg, rgba(2, 10, 94, 0.866) 0%, rgba(25,25,142,1) 5%, rgba(231, 244, 247, 0.89) 100%);}
 * {
   padding: 0;
   margin: 0;
@@ -75,8 +77,8 @@ li:last-child {
 }
 
 .nav-link:hover {
-  background: #487cdd;
-  box-shadow: 0 0 15px #48a1ddb7;
+  background: #f7fafde8;
+  box-shadow: 0 0 15px #48a1ddb9;
   transition: .2s;
 }
 
@@ -102,6 +104,7 @@ li:last-child {
 
 .hidden {
   position: absolute;
+  display: none;
   /* visibility: hidden; */
 }
 

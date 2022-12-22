@@ -9,7 +9,13 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 
     <link href="https://unpkg.com/nes.css/css/nes.css" rel="stylesheet" /> -->
-
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('#skills').click().removeClass('.hidden')
+      });
+      
+    </script>
 
     <title>Resume</title>
   </head>
@@ -33,12 +39,12 @@
     <div class="container">
       <div class="main_block">
         <div class="main_info" >
-          <div class="main_p text-typewriter anim-typewriter">
-            <p class="about hidden">Few words about me Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia recusandae atque totam, est autem dolorum. Explicabo quidem fuga voluptates fugiat. Esse quis magni aperiam vitae quasi odit facilis tempora exercitationem!
+          <div class="main text-typewriter anim-typewriter">
+            <p id="about_p">Few words about me Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia recusandae atque totam, est autem dolorum. Explicabo quidem fuga voluptates fugiat. Esse quis magni aperiam vitae quasi odit facilis tempora exercitationem!
             Iure doloremque beatae iste alias, aliquid laborum rerum, unde repellat natus, odio voluptatibus. Sed ut laudantium neque obcaecati, provident delectus, eius perferendis, tenetur aliquid exercitationem nulla facilis alias. At, dolorem?</p>
-            <p class="skills hidden">Python, html, css, git, JS, </p>
-            <p class="education hidden">Bachelar DC</p>  
-            <div id="projects">
+            <p id="skills_p" class=" hidden">Python, html, css, git, JS, </p>
+            <p id="education_p" class=" hidden">Bachelar DC</p>  
+            <div id="projects_div"  class=" hidden">
               quosSSSs cum.
               <div class='project-tile'>
                 <a>ссылка на проект</a>
