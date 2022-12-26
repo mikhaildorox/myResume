@@ -23,8 +23,8 @@
   <div class='container'>
     <section id='welcome-section'>
         <nav id="navbar">
-          <li id="about"><a href="#" rel="insert" class="nav-link">About</a></li>
-          <li id="skills"><a href="#" rel="insert" class="nav-link">Skills</a></li>
+          <li id="about"><a href="#main_about" "insert" class="nav-link">About</a></li>
+          <li id="skills"><a href="#main_skills" rel="insert" class="nav-link">Skills</a></li>
           <li id="education"><a href="#" rel="insert" class="nav-link">Education</a></li>
           <li id="projects-link"><a href="#" rel="insert" class="nav-link">Projects</a></li>
         </nav>
@@ -37,25 +37,37 @@
     </section>
   </div>
     <div class="container">
-      <div class="main_block">
+      <section class="main_section">
         <div class="main_info" >
-          <div class="main">
-            <p id="about_p">Few words about me 
-              Изучаю программирование в свободное время.
+          <div class="main yes-wrap" id="main_about">
+            <p>Few words about me<br/>
+              Изучаю программирование в свободное время.<br/>
               Работаю школьным учителем.
-              Преподаю математику и информатику в средних и старших классах.
+              Преподаю математику и информатику в средних и старших классах.<br/>
               Подготавливаю к ОГЭ и ЕГЭ. Также веду индивидуальные занятия.</p>
-            <p id="skills_p" class=" hidden">Python, html, css, git, JS, </p>
-            <p id="education_p" class=" hidden">Bachelar DC</p>  
-            <div id="projects_div"  class=" hidden">
+          </div>
+          <div class="main " id="main_skills">
+            <ul> 
+              <li>Python</li>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JS</li>
+              <li>JQuery</li>
+              <li>React</li>
+              <li>PostgreSQL</li>
+            </ul>
+          </div>
+          <div class="main " id="main_education">
+            <p>Bachelar DC</p>  
+          </div>
+            <div id="projects_div"  class="main">
               quosSSSs cum.
               <div class='project-tile'>
                 <a>ссылка на проект</a>
               </div>
             </div> 
-          </div>
         </div>
-      </div>
+      </section>
     </div>
   </body>
   </html>

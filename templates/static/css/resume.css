@@ -86,20 +86,23 @@ li:last-child {
   font-family: start-2p;
 }
 
-.main_block {
+.main_section {
   border: 1px solid red;
   margin: 25px auto;
   height: 800px;
+  padding: 100px;
 }
 
 .main_info {
   border-radius: 10px;
-  justify-content: center;
-  margin: 100px;
   padding: 20px;
   height: 500px;
   box-shadow: 0 0 15px rgb(0 0 0 / 10%);
   border: 1px solid green;
+}
+
+.yes-wrap {
+  word-break: break-word;
 }
 
 .hidden {
@@ -108,8 +111,8 @@ li:last-child {
   /* visibility: hidden; */
 }
 
-.main_p {
-  height: 100%;
+.main {
+  position: absolute;
   padding: 10px;
 }
 
